@@ -23,3 +23,4 @@ print(bubble_sort(arr=[5, 1, 2, 3, 4]))
 # Time Complexity
 # Worst case/ Average Case: O(n*n)
 # Best Case: O(n) (Most of the elements are already in a sorted order)
+# Space Complexity: O(1)
