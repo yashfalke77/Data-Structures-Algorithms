@@ -76,6 +76,7 @@ printAllPairs(10)
 # Arrays and objects (Reference type) require O(n) space (Where n is the length of refernce types)
 
 # ---------------------------- Logarithms in Big O notation -------------------------
+# here log base 2 into n is equal to log n
 # -- BEST to WORST big(O):  O(1) , O(logn), O(n), O(nlogn), O(n*n)
 
 # ------------------------------- Dictionaries with Big O notation (space complexity)-----------------------
