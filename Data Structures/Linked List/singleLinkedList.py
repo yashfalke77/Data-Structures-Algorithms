@@ -93,7 +93,7 @@ class Singly_Linked_List():
         """
         Indexing Support. Used to get a node at particular position
         """
-        if index < 0 or index > self.length:
+        if index < 0 or index > self.length - 1:
             return None
         else:
             current = self.head
@@ -122,7 +122,7 @@ class Singly_Linked_List():
         if index == self.length:
             return not not self.push(value)
         if index == 0:
-            return not not self.push(value)
+            return not not self.unshift(value)
         new_node = Node(value)
         previous = self.__getitem__(index - 1)
         current = previous.next
@@ -146,6 +146,9 @@ class Singly_Linked_List():
         return True
 
     def reverse(self):
+        """
+        This reverses the linked list order.
+        """
         node = self.head
         self.head = self.tail
         self.tail = node
