@@ -20,7 +20,6 @@ class Circular_Queue:
         self.rear = (self.rear + 1) % self.size
         if self.full():
             print("Circular Queue is Full")
-            # self.rear -= 1
         else:
             self.cqueue[self.rear] = value
 
@@ -46,14 +45,11 @@ class Circular_Queue:
 
 
 circular_queue = Circular_Queue(4)
-print(circular_queue.rear)
 circular_queue.insert(10)
-print(circular_queue.rear)
 circular_queue.insert(20)
-print(circular_queue.rear)
 circular_queue.insert(30)
-print(circular_queue.rear)
-circular_queue.insert(40)
-print(circular_queue.rear)
 
-# circular_queue.show()
+circular_queue.show()
+
+
+# Major disadvantage of circular queue is we cant insert the element at the last position of circular queue
