@@ -1,5 +1,5 @@
 ---------------------------------------- Tree ------------------------------------------------------
-A data structure that consist of a node in a parent / child relationship. 
+A data structure that consist of a node in a parent / child relationship.
 It is a non linear data structure in which element are inserted level by level or heirarchial manner
 Single linked list is aspecial case of tree
 
@@ -8,3 +8,10 @@ It is a tree in which every node has at most 2 subtrees i.e left & right subtree
 
 ----------------------------------- Binary Search tree ------------------------------------------------
 It is a binary Tree very node has at most 2 subtrees i.e left & right subtree, but left subtree node must be less than its parent node and right subtree node must be greater or equal to its parent node
+
+------------------------------------ Binary Heap -------------------------------------------------------
+Very similar to BST , but with some different rules
+In MaxBinary Heap : parent node are greater than child nodes
+Min Binary Heap: parent nodes are always smaller than child nodes
+Binary Heap is Compact as possible and no implied ordering between childrens
+In Binary Heap we fill first left then right

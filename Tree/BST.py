@@ -1,4 +1,5 @@
 from operator import le
+from platform import node
 from typing import Any
 
 
@@ -69,21 +70,72 @@ class Binary_Search_Tree:
                 queue.append(node.right)
         return data
 
+    def depth_first_search_preOreder(self):
+        data = []
+
+        def traverse(node):
+            data.append(node.value)
+            if node.left:
+                traverse(node.left)
+            if node.right:
+                traverse(node.right)
+        traverse(self.root)
+        return data
+
+    def depth_first_search_postOreder(self):
+        data = []
+
+        def traverse(node):
+            if node.left:
+                traverse(node.left)
+            if node.right:
+                traverse(node.right)
+            data.append(node.value)
+        traverse(self.root)
+        return data
+
+    def depth_first_search_inOrder(self):
+        data = []
+
+        def traverse(node):
+            if node.left:
+                traverse(node.left)
+            data.append(node.value)
+            if node.right:
+                traverse(node.right)
+        traverse(self.root)
+        return data
+
 
 tree = Binary_Search_Tree()
 tree.insert(10)
 tree.insert(7)
 tree.insert(15)
 tree.insert(20)
-print(tree.search(10))
-print(tree.search(20))
-print(tree.search(200))
-print(tree.breadth_first_search())
+# print(tree.search(10))
+# print(tree.search(20))
+# print(tree.search(200))
+# print(tree.breadth_first_search())
+print(tree.depth_first_search_preOreder())
+print(tree.depth_first_search_postOreder())
+print(tree.depth_first_search_inOrder())
 
 # ----------------------------------- BFS(Breadth First Search) -----------------------------------------
 # visit all node at one level before moving to the next level
 # It uses queue data structure
 
+
+# ---------------------------------- DFS (Depth First Search) -------------------------------------------------
+# Visit all node at current branch and then backtrack to other branch
+# Three types of Dfs:
+# 1) PreOrder: Follows VLR  (root is the first thing to be pushed)
+# 2) Postorder: Folloes LRV  (root is the last thing to be pushed)
+# 3) Inorder: Follows LVR (Gives sorted order)
+
+
+# -------------------------------- BFS vs DFS ---------------------------------------------
+# If tree contains all the left and right nod i.e it is a wide treee, here dfs shine out agianst bfs in space complexity
+# In Special Case binary tree such as only left binary tree or right binary tree then BSF shiine out against dfs
 
 # ---------------------------------------  Big O Notation ------------------------------------------------
 # 1) Insertion: Best and average case O(logn) , worst case: O(n)

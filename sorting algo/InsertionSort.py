@@ -5,7 +5,10 @@ def insertion_sort(arr):
         while(j >= 0 and arr[j] > current_value):
             arr[j+1] = arr[j]
             j -= 1
+        print(arr)
         arr[j+1] = current_value
+        print(arr[j+1])
+        print(arr)
     return arr
 
 
