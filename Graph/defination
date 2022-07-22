@@ -1,0 +1,36 @@
+Graph is collection of nodes and connections between these nodes
+
+Uses:
+
+1. Social Networking
+2. Location /
+3. Routing Algorithms
+4. Visual Heirarchy
+5. File Systems optimizations
+
+Essesntial Graph Terms:
+
+1. Vertex: a node
+2. edge: connections between the nodes
+
+Types of Graph:
+
+1. Unweighted Undirected Graph:
+   Where connections have no directions / no polarity represented using line.
+2. Unweighted directed Graph
+   Where connections have directions / polarity represented using arrow
+3. Weighted Undirected Graph:
+   Where connections have no directions / no polarity represented using line. Weight is assigned to edges
+4. Weighted directed Graph:
+   Where connections have directions / polarity represented using arrow.Weight is assigned to edges
+
+Representing Graph:
+
+1. Adjacency Matrix:
+   Takes more space
+   slower to iterate over all edges
+   Faster to look up at particular / specific edge
+2. Adjacency List
+   Can take a less space
+   Faster to iterate all over the edges
+   can be slower to lookup specific edge
