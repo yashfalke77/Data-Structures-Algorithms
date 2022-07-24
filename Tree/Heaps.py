@@ -83,4 +83,4 @@ print(heap)
 # worst case of binary search tree is removed by binary heap as in heap we have to fill all node in one level then move to next level , so leftsided binary tree or right sided binary tree is not possible
 
 # 2) search : O(n)
-# as like binary tree we dont have left side greater than right side hence we have check all the nodes (considering worst case)
+# as like binary search tree we dont have left side greater than right side hence we have check all the nodes (considering worst case)

@@ -1,3 +1,4 @@
+
 class Graph:
     def __init__(self) -> None:
         self.adjacency_list = {}
@@ -42,7 +43,34 @@ class Graph:
                 if neighbor not in visited_vertices.keys():
                     dfs(neighbor)
         dfs(starting_node)
+        return result
 
+    def depth_first_search_iterative(self, start):
+        s = [start]
+        visited_vertices = {}
+        visited_vertices[start] = True
+        result = []
+        while len(s) != 0:
+            vertex = s.pop()
+            result.append(vertex)
+            for neighbour in self.adjacency_list[vertex]:
+                if neighbour not in visited_vertices.keys():
+                    visited_vertices[neighbour] = True
+                    s.append(neighbour)
+        return result
+
+    def breadth_first_search(self, start):
+        q = [start]
+        visited_vertices = {}
+        visited_vertices[start] = True
+        result = []
+        while len(q) != 0:
+            vertex = q.pop(0)
+            result.append(vertex)
+            for neighbor in self.adjacency_list[vertex]:
+                if neighbor not in visited_vertices.keys():
+                    q.append(neighbor)
+                    visited_vertices[neighbor] = True
         return result
 
 
@@ -65,3 +93,5 @@ g.add_edge("D", "F")
 g.add_edge("E", "F")
 print(g)
 print(g.depth_first_search_recursive("A"))
+print(g.depth_first_search_iterative("A"))
+print(g.breadth_first_search("A"))
