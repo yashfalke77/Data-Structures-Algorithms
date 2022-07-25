@@ -1,0 +1,26 @@
+Algorithms: A Process or set of steps to accomplish a certain task
+
+------------------------------------- Problem solving Startegies ---------------------------------------------
+
+1. Understand Problem
+2. Explore Concrete Examples
+3. Break it Down
+4. Solve / Simplify
+5. Look Back and Refactor
+
+--- 1. Understand the Problem
+(i) Can I restate the problem in my own words?
+(ii) What are the inputs that go into the problem?
+(iii) What are the outputs that should come from the solution to the problem?
+(iv) Can the outputs be determined from the inputs? In other words, do I have enough information to solve the problem? (You may not be able to answer this question until you set about solving the problem. That's okay; it's still worth considering the question at this early stage.)
+(v) How should I label the important pieces of data that are a part of the problem?
+
+--- 2. Explore Concrete Examples
+(i) Start with Simple Examples
+(ii) Progress to More Complex Examples
+(iii) Explore Examples with Empty Inputs
+(iv) Explore Examples with Invalid Inputs
+(v) Write a function which takes in a string and returns counts of each character in the string.
+
+--- 3. Break it Down
+Explicitly write out the steps you need to take.
