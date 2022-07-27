@@ -1,6 +1,6 @@
 Algorithms: A Process or set of steps to accomplish a certain task
 
-------------------------------------- Problem solving Startegies ---------------------------------------------
+------------------------------------- Problem solving Startegies ------------------------------------------
 
 1. Understand Problem
 2. Explore Concrete Examples
@@ -24,3 +24,18 @@ Algorithms: A Process or set of steps to accomplish a certain task
 
 --- 3. Break it Down
 Explicitly write out the steps you need to take.
+
+--- 4. Solve / Simplify
+(i) Find the core difficulty in what you're trying to do
+(ii) Temporarily ignore that difficulty
+(iii) Write a simplified solution
+(iv) Then incorporate that difficulty back in
+
+--- 5. Look Back and Refactor
+(i) Can you check the result?
+(ii) Can you derive the result differently?
+(iii) Can you understand it at a glance?
+(iv) Can you use the result or method for some other problem?
+(v) Can you improve the performance of your solution?
+(vi)Can you think of other ways to refactor?
+(vii) How have other people solved this problem?
