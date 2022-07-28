@@ -16,7 +16,7 @@
 # TODO (Problem Statement): Caluculate N th digit in febonnaci series
 
 # Without using Dynamic Programming
-# Time Complexity: O(2**n)
+# Time Complexity: O(2**n) [Worst than O(n*n)]
 
 def fib(n):
     if n <= 2:
@@ -25,3 +25,42 @@ def fib(n):
 
 
 print(fib(4))
+
+# ------------------------------------- MEMOIZATION ------------------------------------------------
+# Storig the results of expensive functions  calls and returning the cached result if same input occur again
+# Follows Top Down Approach
+# Time Complexity: O(n)
+
+
+def fib1(n, memo={"1": 1, "2": 2}):
+    if n in memo:
+        return memo[n]
+    if n <= 2:
+        return 1
+    res = fib1(n-1, memo) + fib1(n-2, memo)
+    memo[n] = res
+    return res
+
+
+print(fib1(50))
+
+# -------------------------------- Tabulation -------------------------------------------------------
+# Storing the result of previous result in a "table" (usually an array)
+# Usually done using iteration
+# Better space complexity can be achieved using tabulation
+# Follows Bottom top Approach
+# Time Complexity: O(n)
+
+
+def fib2(n):
+    if n <= 2:
+        return 1
+    fib_nums = [None]*(n+1)
+    fib_nums[1] = 1
+    fib_nums[2] = 1
+    for i in range(3, n + 1):
+        fib_nums[i] = fib_nums[i-1] + fib_nums[i-2]
+    return fib_nums[n]
+
+
+print(fib2(50))
