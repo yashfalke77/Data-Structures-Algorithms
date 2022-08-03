@@ -20,4 +20,4 @@ Read through our [Contribution Guidelines](CONTRIBUTING.md) before you contribut
 
 ## List of Algorithms
 
-See our [directory](DIRECTORY.md) for easier navigation and better overview of the project.
+See our [directory](https://github.com/yashfalke77/Data-Structures---Algorithms) for easier navigation and better overview of the project.
