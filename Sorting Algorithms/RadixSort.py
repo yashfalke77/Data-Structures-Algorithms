@@ -8,6 +8,10 @@ def getDigit(num, place):
     return floor(abs(num)//pow(10, place)) % 10
 
 
+print("-------")
+print(getDigit(12, 3))
+
+
 # def digitCount(num):
 #     temp = 0
 #     while(num > 0):
