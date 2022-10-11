@@ -1,6 +1,3 @@
-from operator import le
-
-
 def pivot(arr, start, end):
     pivot = arr[start]
     swap_index = start
